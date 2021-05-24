@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdf9fd;
+}
+#firstnum {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+#firstnum:focus {
+  border: 1px solid #a900f7;
+  outline: none;
+}
+#secondnum {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+#secondnum:focus {
+  border: 1px solid #a900f7;
+  outline: none;
+}
+#units {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+#units:focus {
+  border: 1px solid #a900f7;
+  outline: none;
+}
+h1 {
+  margin: 2rem 0em;
+}
+#solve {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+  text-align: center;
+  width: 95px;
+  color: rgb(25, 1, 24);
+  background-repeat: no-repeat;
+  background: rgb(1, 255, 0);
+
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  box-shadow: 2px 3px 5px #dfdede;
+  transition: 0.3s;
+}
+#solve:hover {
+  box-shadow: 5px 7px 8px #ffffff00;
+  width: 96px;
+  height: 31px;
+  box-shadow: 0px 4px 6px #abaaaa;
+}
+#summary {
+  text-decoration: underline rgb(255, 0, 0);
+}
+#circum {
+  width: 135px;
+  border: none;
+  outline: none;
+  height: 30px;
+  color: #330703;
+  background: rgb(0, 186, 200);
+  box-shadow: 3px 4px 6px #dfdede;
+  border-radius: 7px;
+  margin: 0 5px;
+}
+#area {
+  height: 30px;
+  width: 135px;
+  border: none;
+  outline: none;
+  color: #d4f0d6;
+  border-radius: 7px;
+  background: rgb(237, 55, 225);
+  margin: 0 5px;
+  box-shadow: 3px 4px 6px #dfdede;
+}
+
+@media only screen and (max-width: 426px) {
+  #firstnum {
+    width: 400px;
+  }
+}

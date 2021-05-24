@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="hypoSolver solver solves pythagorean operations with right angled triangles, and also finds it's area and circumference"
+        <title>hypoSolver</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Hypotenuse solver</h1>
+        
+        <input type="number" placeholder="a side length" id="firstnum">
+        <br>
+        <input type="number" placeholder="b side length" id="secondnum">
+        <br>
+        <select name="units" id="units">
+            <option value="" disabled selected style="color: rgba(0, 0, 0, 0.5)">Select Units</option>
+            <option value=" ">None</option>
+            <option value="mm">mm</option>
+            <option value="cm">Cm</option>
+            <option value="dm">Dm</option>
+            <option value="m">m</option>
+            <option value="dam">Dam</option>
+            <option value="hm">Hm</option>
+            <option value="km">Km</option>
+            <option value="Mile">mile</option>
+            <option value="Feet">feet</option>
+            <option value="Inch">inch</option>
+            <option value="Yards">yards</option>
+        </select>
+        <br>
+        <button id="solve" onclick="solve()">solve</button>
+        <!--elements from here onwards only show up when users click the "solve" button-->
+        <p id="answer"></p>
+        <p id="or" style="display: none;">or</p>
+        <b><p id="c"></p></b>
+        <p id="steps"></p>
+        <p id="summary"></p>
+        <div id="alsoSee" style="opacity: 0;">
+            <b><p>Also See:</p></b>
+            <br>
+            <button onclick="circumference()" id="circum">Circumference</button>
+            <button onclick="area()"id="area">Area</button>
+        </div>
+        
+    </body>
+</html>
